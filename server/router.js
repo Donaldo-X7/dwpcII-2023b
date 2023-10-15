@@ -1,3 +1,4 @@
+// S03A01:
 import createError from 'http-errors';
 // Impornting winston logger
 import log from './config/winston';
@@ -5,15 +6,16 @@ import log from './config/winston';
 // Importando enrutador home
 import homeRouter from './domains/home/home.router';
 
+// S03A01:
 // Función que agrega rutas
-const addRoutes = (app) => {
+const addRoutes = (app) => { 
   // Agregando enrutado de Home
   app.use('/', homeRouter);
 
-  // ERRORES
+  // S03A01: ERRORES
   // catch 404 and forward to error handler
   app.use((req, res, next) => {
-    log.info(`404 Pagina no encontrada ${req.method} ${req.originalUrl}`);
+    log.info(`404 Pagina No Encontrada ${req.method} ${req.originalUrl}`);
     next(createError(404));
   });
 
@@ -32,4 +34,5 @@ const addRoutes = (app) => {
   return app;
 };
 
+// S03A01:
 export default { addRoutes };

@@ -18,7 +18,8 @@ import webpackConfig from '../webpack.dev.config';
 // Impornting winston logger
 import log from './config/winston';
 
-// Importing Router
+// S03A01: 
+// Importando enrutador
 import router from './router';
 
 import debug from './services/debugLogger';
@@ -74,7 +75,8 @@ app.use(cookieParser());
 // Crea un server de archivos estaticos
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-// Registro de Rutas
+// S03A01: 
+// Registro de rutas
 router.addRoutes(app);
 
 export default app;
