@@ -1,2 +1,2 @@
 # dwpcII-2023b
-Proyecto para el Desarrollo de Pila Completa Web 2 - 2023B
+Proyecto para el Desarrollo Web de Pila Completa 2 - 2023B
